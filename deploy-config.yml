@@ -1,0 +1,10 @@
+name: Remote Workflow
+description: 'composite run action'
+
+runs:
+  using: "composite"
+  steps: 
+    - name: Echo
+      shell: bash
+      run: |
+        echo hello from another repo
